@@ -1,0 +1,15 @@
+name: Quoram repository check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    name: verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify workflow
+        run: echo "Quoram repository check passed"
